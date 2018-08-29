@@ -1,0 +1,28 @@
+
+
+h1 {
+    font-size:25px;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+}
+ p{color: navy;
+            font-size: 15px;}
+    #conghoa{
+            text-align: center;
+            color: red;
+            font-size: 30px;
+        }
+        .xyz {text-indent: 25px;}
+
+         .q {color: gold;
+            text-align: center;
+            font-size: 30px;}       
+            
+                .abc {text-align:right
+            }
+        #nld{text-align:right;
+            font-size: 20px;
+            color:forestgreen;
+            font-style: italic;}
+        }
