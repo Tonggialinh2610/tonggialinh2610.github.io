@@ -1,0 +1,33 @@
+* {
+  margin: auto;
+  padding: auto;
+  box-sizing: border-box;
+   text-align: center;
+}
+ 
+body {
+  font-family: sans-serif;
+  color: #333;
+}
+#menu ul {
+  background: royalblue;
+  list-style-type: none;
+  text-align: center;
+}
+#menu li {
+  color: white;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: -5px;
+}
+#menu a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+#menu a:hover {
+  background: #F1F1F1;
+  color: #333;
+}
