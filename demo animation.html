@@ -3,15 +3,14 @@
 <head>
     <link rel="stylesheet" type="text/css" href="menu css/menu.css">
 	<style type="text/css">
-		img{
-        width:500px;
-        margin:0px;
-        padding: 0px;
+		img .anhbia{
+        width: 100%;
+        padding:auto;
         border:1px solid black;
-        float: left;
          opacity: 1.0;
+         text-align: center;
     }
-    img:hover{
+    img.anhbia:hover{
         opacity: 0.7;
     }
     h2.letter {
@@ -56,6 +55,10 @@
         -webkit-animation: fade 4s infinite 1400ms;
         animation: fade 4s infinite 900ms;
 }
+.letter:nth-child(10) {
+        -webkit-animation: fade 4s infinite 1400ms;
+        animation: fade 4s infinite 1000ms;
+}
   
  @-webkit-keyframes fade {
         50% {
@@ -68,25 +71,148 @@
             opacity: 0.02;
         }
 }
-     h1, h3{
-            margin-right:40px;
-            margin-left:560px;
-       }
-       h2{text-align: center;}
-        div.screenshot{
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 200px;
-    } 
-    div.screenshot:hover {
-        border: 1px solid #777;
-    }
-    div.screenshot img {
-        width:100%;
-        height: auto;
-    }
+    h1, h3{
+            color: #000033;
+            margin: auto;
+            animation: nen 8s ease infinite;
+            text-align: center;
+           padding:auto;
+        }
+@keyframes nen{
+    0%      {background-color:#cc3333; color:#fff; }
+    25%     {background-color:#cc9933; color:#fff; }
+    50%     {background-color:#99ff00; color:#fff; }
+    100%    {background-color:#66ff33; color:#fff; }
+}
+    h2{text-align: center;}
+.screenshot{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin:auto;
+}
+.pic{
+    position: absolute;
+    width: 1000px;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+.pic1{
+    position: relative;
+}
+
+.pic2{
+
+    max-width: 25%;
+    display: inline-block;
+    margin: 5px 0;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.pic2 img{
+    max-width: 200px;
+    padding: 5px;
+    border: 2px solid #e7e6e6;
+    background-color: #e7e6e6;
+    cursor: pointer;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.top{
+    position: absolute;
+    z-index: 2;
+}
+
+.bottom{
+    position: absolute;
+    z-index: 1;
+}
+
+.top:hover{
+    animation:fadeout 3s;
+--webkit-box-shadow: 0px 0px 20px 1px rgba(166,166,166,1);
+-moz-box-shadow: 0px 0px 20px 1px rgba(166,166,166,1);
+box-shadow: 0px 0px 20px 1px rgba(166,166,166,1);
+}
+
+@keyframes fadeout{
+    0%      {opacity: 1 }
+    10%     {opacity: 0.8 }
+    20%     {opacity: 0.6 }
+    30%     {opacity: 0.4 }
+    40%     {opacity: 0.2 }
+    50%     {opacity: 0 }
+    60%     {opacity: 0.2 }
+    70%     {opacity: 0.4 }
+    80%     {opacity: 0.6 }
+    90%     {opacity: 0.8 }
+    100%    {opacity: 1 } }
+
+
+
+        
     
+    .tacgia{
+    position: absolute;
+    margin-top: 320px;
+    text-align: center;}
+    .tacgia p{
+    width: 160%;
+    height: 40px;
+    background-color: #9999ff;
+    color: #ffffff;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    animation: chaychu 5s;}
+@keyframes chaychu {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
+    }
+
+    60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0);
+    transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    }
+
+    90% {
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    }
+
+
 	</style>
 </head>
 <body>
@@ -104,45 +230,53 @@
 </div>
         <br>
     <a href="index.html">
-        <img src="img/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg">
+        <img class="anhbia" src="img/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SY1000_CR0,0,674,1000_AL_.jpg">
     </a>
     <h1>Iron Man 2008</h1>
     <h3>Iron Man (tên thật là Tony Stark) là một siêu anh hùng hư cấu xuất hiện trong truyện tranh của Mỹ. Anh được miêu tả là một tỉ phú người Mỹ, một ông trùm ngành công nghiệp, một kĩ sư thiên tài, Tony bị chấn thương ngực nặng trong một vụ bắt cóc, bị những kẻ bắt cóc ép buộc xây dựng cho chúng một loại vũ khí hủy diệt hàng loạt. Nhưng thay vào đó, anh tự tay tạo ra một bộ áo giáp để cứu sống bản thân và thoát khỏi sự giam cầm. Như lấy cảm hứng từ đó, anh nâng cấp bộ giáp mình đến một mức tối tân và phi thường hơn thông qua công ty của mình, Stark Industries. Anh sử dụng bộ giáp của mình để bảo vệ thế giới với tên gọi là Iron Man. Trong suốt chiều dài lịch sử xuất bản của nhân vật, Iron Man đã từng là một thành viên sáng lập của nhóm siêu anh hùng Avengers. Nhân vật này được nhập vai bởi diễn viên Robert Downey Jr, đem lại một thành công rực rỡ cho phòng vé, góp phần mở ra hẳn một kỉ nguyên mới về đề tài siêu anh hùng trong điện ảnh Mỹ.</h3>
     <h2><span class='letter'>S</span><span class='letter'>C</span><span class='letter'>R</span><span class='letter'>E</span><span class='letter'>E</span><span class='letter'>N</span><span class='letter'>S</span><span class='letter'>H</span><span class='letter'>O</span><span class='letter'>T</span></h2>
-    <br>
-    <div class="screenshot">
-        <a href="#" target="_blank">
-           <img src="screenshot/iron-man1-movie-screencaps.com-102.jpg">
-        </a>
-        
-    </div>
-    <div class="screenshot">
-        <a href="#" target="_blank">
-           <img src="screenshot/iron-man1-movie-screencaps.com-1154.jpg">
-        </a>
     
-    </div>
-    <div class="screenshot">
-        <a href="#" target="_blank">
-           <img src="screenshot/iron-man1-movie-screencaps.com-1390.jpg">
-        </a>
+        <div class="screenshot">
+            
+            <div class="pic">
+                <div class="pic1">
+                    <div class="pic2">
+                        <div class="bottom"><img src="screenshot/iron-man1-movie-screencaps.com-1154.jpg"></div>
+                        <div class="top"><img src="screenshot/iron-man1-movie-screencaps.com-102.jpg"></div>
+                     </div>   
+                </div>
+                  
+          
+                <div class="pic1">
+                    <div class="pic2">
+                        <div class="bottom"><img src="screenshot/iron-man1-movie-screencaps.com-1390.jpg"></div>
+                        <div class="top"><img src="screenshot/iron-man1-movie-screencaps.com-7399.jpg"></div>
+                    </div>
+            
+                </div>
+                
+                <div class="pic1">
+                    <div class="pic2">
+                        <div class="bottom"><img src="screenshot/iron-man1-movie-screencaps.com-7555.jpg"></div>
+                        <div class="top"><img src="screenshot/iron-man1-movie-screencaps.com-9411.jpg"></div>
+                    </div>
+
+                </div>
+
+                <div class="pic1">
+                    <div class="pic2">
+                        <div class="bottom"><img src="screenshot/iron-man1-movie-screencaps.com-9026.jpg"></div>
+                        <div class="top"><img src="screenshot/iron-man1-movie-screencaps.com-4703.jpg"></div>
+                    </div>
+    
+                </div>
+             </div>   
         
-    </div>
-    <div class="screenshot">
-        <a href="#" target="_blank">
-           <img src="screenshot/iron-man1-movie-screencaps.com-4703.jpg">
-        </a>
-    </div>
-    <div class="screenshot">
-        <a href="#" target="_blank">
-           <img src="screenshot/iron-man1-movie-screencaps.com-7399.jpg">
-        </a>
-    </div>
-    <div class="screenshot">
-        <a href="#" target="_blank">
-           <img src="screenshot/iron-man1-movie-screencaps.com-7555.jpg">
-        </a>
-    </div>
+        </div>
+
+    <div class="tacgia">
+                <p>Created by: <span>Tong Gia Linh</span></p>
+            </div>
 
 </body>
 </html>
