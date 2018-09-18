@@ -19,3 +19,7 @@ function updateTime(date){
   var time = "Time for Reference --- " + date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds();
   timeDiv.innerHTML = time;
 }
+
+
+
+

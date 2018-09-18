@@ -5,12 +5,27 @@
 #clock{
   width: var(--size);
   height: var(--size);
-  background-color: white;
-  border: 3px solid silver;
+  background-color: darkslategray;
+  border: 3px solid gold;
   border-radius: 50%;
   box-shadow: 0 0 10px 0 black;
   position: relative;
 }
+ .sigena {
+    position: absolute;
+    z-index: 6;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: rgba(0,0,0,.6);}
+    
+    h1 {
+      font-size: 30px;
+      font-weight: 300;
+      margin: auto;
+      line-height: 1.3;
+    }
 
 #sec-hand {
   width: 1px;
@@ -51,7 +66,7 @@
 .num div {
   width: 1em;
   line-height: 2em;
-  color: brown;
+  color: red;
   text-align: center;
   vertical-align: middle;
 }
@@ -157,7 +172,7 @@
 .clockusa{
       width:25%;
       height: 25%;
-      background-color: white;
+      background-color: silver;
       border:2px solid black;
       -moz-border-radius:50%;
       -webkit-border-radius:50%;
@@ -173,7 +188,7 @@
         width: 120px;
         height: 120px;
      background-color: white;
-      border:1px solid pink;
+      border:1px solid black;
       -moz-border-radius:50%;
       -webkit-border-radius:50%;
       border-radius:50%;
@@ -189,7 +204,7 @@
 .clockita{
       width:25%;
       height:25%;
-      background-color: white;
+      background-color: silver;
       border:2px solid black;
       -moz-border-radius:50%;
       -webkit-border-radius:50%;
@@ -217,7 +232,7 @@
 .clockeng{
       width:25%;
       height:25%;
-      background-color: white;
+      background-color: silver;
       border:2px solid black;
       -moz-border-radius:50%;
       -webkit-border-radius:50%;
@@ -226,108 +241,96 @@
       top: 20%;
       position:absolute; 
       }
-.eng{position: relative;}
+.eng
 .anh{width: 120px;
       height: 120px;
       background-color: white;
-      border:1px solid pink;
+      
       -moz-border-radius:50%;
       -webkit-border-radius:50%;
       border-radius:50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
     position:absolute;}
-
-.twelve {
-  position: absolute;
-  width: 3px;
-  height: 15px;
-  background: #111111;
-  left: 0;
-  top: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.three {
-  position: absolute;
-  width: 15px;
-  height: 3px;
-  background: #111111;
-  top: 15%;
-  bottom: 0;
-  right: 0;
-  margin: auto ;
-}
-
-.six {
-  position: absolute;
-  width: 3px;
-  height: 15px;
-  background: #111111;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: 0 auto;
-}
-
-.nine {
-  position: absolute;
-  width: 15px;
-  height: 3px;
-  background: #111111;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto 0;
-}
-.center {
-  width: 1%;
-  height: 1%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-  background: #000;
-  border-radius: 100%;
-}
-
-.seconds {
-  position: absolute;
-  height: 50%;
-  width: 1%;
-  left: 0;
-  right: 0;
-  bottom: 160px;
-  top: 0px;
-  margin: auto;
-  background: #000;
-  -webkit-transform-origin: bottom;
-  background: #ff4136;
-}
-
-.minutes {
-  position: absolute;
-  height: 40%;
-  width: 1%;
+.watch-face {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: lightgoldenrodyellow ; 
+  border: 2px solid black;
+   top: 50%;
   left: 50%;
-  right: 0;
-  bottom: 0px;
-  top: 50%;
-  margin: auto;
-  background: #000;
-  -webkit-transform-origin: bottom;
+  transform: translate(-50%,-50%);
+  position:absolute;
 }
+  
+  
+  .watch-face-outline {}
 
-.hours {
+  .watch-face-outline-point {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: red ;
+    left: 49%;
+    top: 3%;
+    border-radius: 50%;
+    -webkit-transform-origin: 50% 50px;
+    transform-origin: 50% 50px;
+  }
+
+  .point-12 { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  .point-1 { -webkit-transform: rotate(30deg); transform: rotate(30deg); }
+  .point-2 { -webkit-transform: rotate(60deg); transform: rotate(60deg); }
+  .point-3 { -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+  .point-4 { -webkit-transform: rotate(120deg); transform: rotate(120deg); }
+  .point-5 { -webkit-transform: rotate(150deg); transform: rotate(150deg); }
+  .point-6 { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+  .point-7 { -webkit-transform: rotate(210deg); transform: rotate(210deg); }
+  .point-8 { -webkit-transform: rotate(240deg); transform: rotate(240deg); }
+  .point-9 { -webkit-transform: rotate(270deg); transform: rotate(270deg); }
+  .point-10 { -webkit-transform: rotate(300deg); transform: rotate(300deg); }
+  .point-11 { -webkit-transform: rotate(330deg); transform: rotate(330deg); }
+
+  
+
+ 
+  
+
+  .watch-face-hands {}
+
+  .watch-face-hand {
+    position: absolute;
+  }
+
+  .watch-face-hand.hour {
+     width: 5px;
+  height: 25%;
+  background-color: gold;
+  transform-origin: 50% 80%;
   position: absolute;
-  height: 30%;
-  width: 1%;
-  left: 0;
-  right: 0;
-  bottom: 80px;
-  top: 0px;
-  margin: auto;
-  background: #000;
-  -webkit-transform-origin: bottom;
+  top: 30%;
+  left: calc(50% + -2px);
+
+  }
+
+  .watch-face-hand.minute {
+    width: 3px;
+  height: 40%;
+  background-color: gold;
+  transform-origin: 50% 80%;
+  position: absolute;
+  top: 18%;
+  left: calc(50% - 1px);
+  }
+  
+  .watch-face-hand.second {
+    width: 1px;
+  height: 50%;
+  background-color: gold;
+  transform-origin: 50% 80%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
 }
