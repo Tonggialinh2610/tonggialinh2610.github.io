@@ -9,7 +9,9 @@
 
     .anhbia:hover{
         opacity: 0.7;
-    }
+    }img{
+        width:100%;
+        border:1px solid black;}
     h2.letter {
         color: red;
    position: relative;
@@ -81,52 +83,99 @@
     0%      {background-color:#cc3333; color:#fff; }
     25%     {background-color:#cc9933; color:#fff; }
     50%     {background-color:#99ff00; color:#fff; }
-    100%    {background-color:brown; color:#fff; }
+    100%    {background-color:#66ff33; color:#fff; }
 }
     h2{text-align: center;
         color: red}
-.screenshot.{
-    
+.screenshot{
     position: relative;
-   padding: auto;
-        display: inline-block;
-    box-sizing: border-box;
-    text-align: center;
-    
-    
+   max-width: 1000px;
+    display:inline-block;
+    margin: auto;
 
 }
 
 
 
-.pic{
-   width: 25%;
-    border:1px solid black;
-   margin: auto;
-position: absolute;
-   padding:auto;
-    box-sizing: border-box; 
-    position: relative;   
+.pic1{   
+    width: 25%;
+    box-sizing: border-box;    
+    
+   position: relative;
+    background-color: #e7e6e6;
+    -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.pic2{   
+    width: 25%;
+    box-sizing: border-box;    
+
+
+   position: relative;
+    background-color: #e7e6e6;
+    -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.pic3{    
+    width: 25%;
+    box-sizing: border-box;    
+ 
+    
+    position: relative;
+    background-color: #e7e6e6;
     -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
 
-img{width: 100%;
-border: solid black;}
+.pic4{ 
+    width: 25%;
+    box-sizing: border-box;    
+    position: relative;   
+background-color: #e7e6e6;
+    -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
 
 
 .top{
-    
-   
-
+    position: absolute;
+    z-index: 10;
 }
 
 .bottom{
-    
+    position: absolute;
+   z-index:1;
+}*/
+
+
+.top:hover{
+    animation:fadeout 3s;
+--webkit-box-shadow: 0px 0px 20px 1px rgba(166,166,166,1);
+-moz-box-shadow: 0px 0px 20px 1px rgba(166,166,166,1);
+box-shadow: 0px 0px 20px 1px rgba(166,166,166,1);
 }
 
+@keyframes fadeout{
+    0%      {opacity: 1 }
+    10%     {opacity: 0.8 }
+    20%     {opacity: 0.6 }
+    30%     {opacity: 0.4 }
+    40%     {opacity: 0.2 }
+    50%     {opacity: 0 }
+    60%     {opacity: 0.2 }
+    70%     {opacity: 0.4 }
+    80%     {opacity: 0.6 }
+    90%     {opacity: 0.8 }
+    100%    {opacity: 1 } }
 
 
 
@@ -134,7 +183,7 @@ border: solid black;}
     
     .tacgia{
     position: absolute;
-    margin-top: 120px;
+    margin-top: 320px;
     text-align: center;}
     .tacgia p{
     width: 160%;
@@ -145,10 +194,10 @@ border: solid black;}
             animation-duration: 8s;
             -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
-    animation: chaychu 8s;}
+    animation: chaychu 5s;}
 @keyframes chaychu {
     from,
-    50%,
+    60%,
     75%,
     90%,
     to {
@@ -158,27 +207,27 @@ border: solid black;}
 
     0% {
     opacity: 0;
-    -webkit-transform: translate3d(-1000px, 0, 0);
-    transform: translate3d(-1000px, 0, 0);
+    -webkit-transform: translate3d(-3000px, 0, 0);
+    transform: translate3d(-3000px, 0, 0);
     }
 
-    50% {
+    60% {
     opacity: 1;
     -webkit-transform: translate3d(25px, 0, 0);
     transform: translate3d(25px, 0, 0);
     }
 
     75% {
-    -webkit-transform: translate3d(100px, 0, 0);
-    transform: translate3d(100px, 0, 0);
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
     }
 
     90% {
-    -webkit-transform: translate3d(250px, 0, 0);
-    transform: translate3d(250px, 0, 0);
+    -webkit-transform: translate3d(5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
     }
 
     to {
-    -webkit-transform: translate3d(600px, 0, 0);
-    transform: translate3d(600px, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     }
