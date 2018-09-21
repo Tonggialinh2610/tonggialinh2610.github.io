@@ -2,8 +2,8 @@
     .box{
         float: left;
         position: relative;
-        padding: auto;
-        margin top: 30px;
+        padding: 15px;
+        
         width: 25%
     }
     .box img{
