@@ -1,21 +1,70 @@
-.wrapper{  
-	display: block;
-    max-width: 100%;
-    background: #FFF;
-    padding: 0;
-    text-align: center;
-    font-family: 'open sans';
-    position: relative;
-    margin: auto;
-    font-size: 14px;
-    line-height: 14pt;
-    color: #2c4987;
-    -webkit-font-smoothing: antialiased;}
+                    .wrapper {
+                    display: block;
+                    width: 80%;
+                    background: #FFF;
+                    margin: auto;
+                    
+                }
+                
+                .header {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    outline: 0;
+                    font-size: 100%;
+                    vertical-align: top;
+                }
+                
+                .menu ul {
+                    background: red;
+                    list-style-type: none;
+                    text-align: center;
+                    box-sizing: border-box;
+                }
+                
+                .menu li {
+                    color: white;
+                    display: inline-block;
+                    width: 120px;
+                    height: 40px;
+                    line-height: 30px;
+                    margin-left: -5px;
+                    margin-bottom: 180px
+                }
+                
+                .menu a {
+                    text-decoration: none;
+                    color: #fff;
+                    display: block;
+                }
+                
+                .menu a:hover {
+                    background: #F1F1F1;
+                    color: #333;
+                }
+                .content{width: 100%;
+                    box-sizing:border-box;}
+                .news {
+                    width:30%;
+                    height:500px;
+                    background-color:red;
+                    float:left;
+                }
+                .educations{width:40%;
+                    height: 900px;
+                    background-color: brown;
+                    float: left;
+                }
+                .sports{width:30%;
+                    height: 400px;
+                    background-color:green;
+                    float:right;}
 
-
-.header{margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: top;}
+                .fashions{width:30%;
+                         height:300px;
+                         background-color: gold;
+                         float:right;  }
+                .business{width:30%;
+                    height: 400px;
+                    background-color: blue;
+                    float:left;}
