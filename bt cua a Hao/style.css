@@ -1,11 +1,103 @@
-#wrapper{}
-#content{}
-.box1{}
-.art1{}
-	.sec1{}
-.art2{}
-	.sec2{}
-.art3{}
-	.sec3{}
+#wrapper{
+         width: 60%;
+         height: 1000px;
+         margin: auto;
+         }
+ div article section nav {display: block;}                  
+ header{height: 20%;width:100%;}
+ 	.box1{float: right;    	
+    	background-color: red;
+    	width:45%;
+    	height: 75%;
+    	box-sizing: border-box;}  
+    .box2{float: left;   
+    	background-color: red;
+    	width:45%;
+    	height: 75%;
+    	box-sizing: border-box;}   
+	#content{width: 100%;
+	height: 90%;
+	padding top:30px;
+	background-color: silver;
+		
+			}
+
+.new{width: 100%;
+	height: 35%;
+	
+	background-color: white;
+		}
+	.world{float: right;
+    		margin:auto;    
+    		
+    		width:45%;
+    		height: 90%;
+    		box-sizing: border-box;
+}
+		.asian{ float: right;
+    			background-color: navy;
+    			width: 50%;
+    			height: 94%;
+    			margin: 10px 0px 0px 0px;
+		}
+		.euro{float: left;
+    		background-color: navy;
+    		width: 45%;
+    		height: 40%;
+    		margin: 10px 0px 0px 0px;}
+		.america{float: left;
+    		background-color: navy;
+    		width: 45%;
+    		height: 40%;
+    		margin: 30px 0px 0px 0px;}
+	.country{float: left;
+		margin:auto;
+    	text-align: center;    	
+    	width:45%;
+    	height: 90%;
+    	box-sizing: border-box;}
+    	.northern{float: left;
+    			background-color: navy;
+    			width: 50%;
+    			height: 94%;
+    			margin: 10px 0px 0px 0px;}
+    	.middle{float: right;
+    		background-color: navy;
+    		width: 45%;
+    		height: 40%;
+    		margin: 10px 0px 0px 0px;}
+    	.southern{float: right;
+    		background-color: navy;
+    		width: 45%;
+    		height: 40%;
+    		margin: 30px 0px 0px 0px;}
+
+	.line{margin: auto;
+			background-color: green;
+			width:55%;
+			height: 5%;
+		}
+	
+.sport{width: 100%;
+		height: 23%;
+		background-color: white;
+		margin: 15px 0px 0px 0px}
+	.football{float:right;
+		width:45%;
+		height:95%;
+			background-color: gold}
+	.other{float:left;
+		width:45%;
+		height:95%;
+	}
+	.tennis{float:right;
+		width: 55%;
+		height: 100%;
+		background-color: gold;}
+	.swimming{
+		float:left;
+		width: 35%;
+    	height: 100%;
+    	background-color: gold;}
 .art4{}
 	.sec4{}
