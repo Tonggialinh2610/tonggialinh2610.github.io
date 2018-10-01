@@ -1,4 +1,19 @@
+  *{ margin: auto;
+  padding: auto;
+  box-sizing: content-box;
+   text-align: center;
+}
 
+  #wrapper{width: 80%;
+            }
+    header{width:100%;
+            }
+    .banner{
+        width: 100%;
+        text-align: center ;
+      }
+    .logo a{float: left;
+            max-width: 25%}
     .box{
         float: left;
         position: relative;
@@ -7,14 +22,12 @@
         width: 25%
     }
     .box img{
-        width:100%;
+        width:80%;
         border:1px solid black;
         opacity: 1;
 
     }
-    .banner{
-        width: 100%;
-        text-align: center }
+    
     .title{
         position: absolute;
         width: 100%;
@@ -39,11 +52,7 @@
     .box:hover .title{
         display: inherit;
     }
-   *{ margin: auto;
-  padding: auto;
-  box-sizing: border-box;
-   text-align: center;
-}
+   
  
 body {
   font-family: sans-serif;
