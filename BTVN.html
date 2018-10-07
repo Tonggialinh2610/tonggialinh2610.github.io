@@ -6,8 +6,10 @@
 		function bai1(a,b,c){			
 		var y = Math.max(a,b,c);
 		document.write( y +"&nbsp;"+"là số lớn nhất " + "<br/>")}
-		
+				
 	
+
+
 		function bai2(soGioLam,luong){
 			var a= soGioLam;
 			var b= luong;
@@ -16,6 +18,83 @@
 		else{ var d= a*b;
 			document.write(d + "&nbsp;"  )}
 		}
+
+
+
+
+		function bai3(a,b,c){
+			var a; a>=1; parseInt(a); 
+			var b; b>=1; parseInt(b);
+			var c; c>=1; parseInt(c); 
+		if (a>= b+c){
+			document.write("No")}
+		else if(b>= a+c){
+			document.write("No")}
+		else if(c>= a+b){
+			document.write("No")}
+		else {document.write("Yes")}
+		}
+
+
+
+
+		function bai4(a,b){
+			var a;parseInt(a);
+			var b;parseInt(b);
+			var x;
+			for (x = a; x<b; x++){
+				document.write( x +"<br/>")}
+		}
+
+
+
+
+		function bai5(n){
+			var x = (n+1)*n/2;
+			document.write(x + "<br/>")
+		}
+
+
+
+
+		function bai6(n){
+			var z = (n-1)/2+1;
+			var y = (z*(2+(z-1)*2))/2;
+			document.write(y + "<br/>")
+		}
+
+		
+
+
+		function bai7(n){
+		 var x = true;
+    		if (n < 2){ x = false;}
+    		else{ for (var i = 2; i < n-1; i++)
+        	{
+            if (n % i == 0){
+                x = false;
+             	break;}
+        	}
+    		}     
+    		if (x == true){
+        	document.write(n + " là số nguyên tố <br/>");}
+    		else{
+        	document.write(n + " không phải là số nguyên tố <br/>");}
+				}
+		function bai8(a,b){
+			var a,b;
+			function UCLN(x,y){
+			while(x!=y)   {
+            if(x>y) x=x-y;
+            else y=y-x;
+			}
+			return x;
+			}
+			a=parseInt(a);
+			b=parseInt(b);
+			document.write( UCLN(a,b)+"&nbsp;"+"&nbsp;")
+			document.write( "&nbsp;"+a*b/UCLN(a,b) + "." )}
+		function bai9()
 
 	</script>
 </body>
