@@ -18,4 +18,13 @@ function daoChuoi(str){
 	
 }
 // bai so 3
+function duplicate(num) {
+    for ( var i= 1; i <= 10 ;i =i+1)
+    {document.write("-" + num)}
+ } 
+// bai so 4
+function tenHocVien(arr){
+    return arr.sort(function(a, b) {return a.localeCompare(b)});
+    for (let i = 0; i < arr.length; i++) {document.write(i + arr)}
 
+}
