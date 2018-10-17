@@ -24,7 +24,24 @@ function duplicate(num) {
  } 
 // bai so 4
 function tenHocVien(arr){
-    return arr.sort(function(a, b) {return a.localeCompare(b)});
-    for (let i = 0; i < arr.length; i++) {document.write(i + arr)}
+    function sapXep(a, b) {
+      return a.localeCompare(b);
+    };
+  var name = arr.sort(sapXep);
+    for (let i = 0; i < name.length; i++) {document.write(i +"&nbsp"+ name[i] +"<br>")}
 
 }
+// bai so 5
+function double(arr){
+  for ( var i = 0; i< arr.length; i++)
+   { var x = arr[i] * 2; 
+    var y = x+"";
+    let c = y.toString();
+    var z = c.split();
+console.log( z )}
+
+
+}
+
+//bai so 6
+
