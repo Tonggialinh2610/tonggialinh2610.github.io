@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+        <script language="javascript">
+           
+            function changeFontSize(x)
+            {
+               document.getElementById("point").style.fontSize = x + "px";
+            }
+            function  increaseFontSize(para)
+            {
+                var text = document.getElementById(para).style.fontSize;                    
+                  if(text < 30) {
+                    var s = text + 1;
+                     document.getElementById(para) = s +"px";                
+            } 
+               
+            }
+
+            
+        </script>
+        <div id= "point">
+          <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu nibh fermentum, venenatis mauris nec, maximus lorem. Vestibulum vitae metus sed felis tincidunt tristique ut vitae arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam eget libero diam.</p>
+          <p id="p2">Suspendisse vitae nisl rhoncus, aliquet massa et, laoreet neque. Curabitur commodo lacinia accumsan. Vivamus mattis augue orci, feugiat ornare risus accumsan ut. Nullam dapibus efficitur finibus. Donec pellentesque est vitae velit tincidunt, ut tempor magna aliquam. </p>
+          <p id="p3">Maecenas vehicula odio quis turpis pulvinar sagittis. Duis placerat dignissim porttitor. Vestibulum aliquet laoreet dictum. Etiam in quam id lorem molestie venenatis a sed quam. In at efficitur justo. Nulla finibus ut odio eleifend consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+        
+       
+    </body>
+</html>
