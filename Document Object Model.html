@@ -1,23 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <body>
+<body>
         <script language="javascript">
-           
-            function changeFontSize(x)
-            {
-               document.getElementById("point").style.fontSize = x + "px";
-            }
-            function  increaseFontSize(para)
-            {
-                var text = document.getElementById(para).style.fontSize;                    
-                  if(text < 30) {
-                    var s = text + 1;
-                     document.getElementById(para) = s +"px";                
-            } 
-               
-            }
-
+             function changeFontSize(x){  
+             const allPara = document.querySelectorAll('p');
+             for(let i = 0; i < allPara.length;i++){
+               allPara[i].style.fontSize = x + "px"; 
+              } return x
             
+            }
+         function  increaseFontSize(idPara)
+            {
+                const element  = document.getElementById(idPara);
+              let fontS = element.style.fontSize;
+              let newFontS = parseInt(fontS) + 1;
+              if (newFontS < 30){
+              element.style.fontSize = newFontS + "px"
+              console.log(newFontS); }
+          }                 
+                  
+   function decreaseFontSize(idPara)
+          {
+            const element  = document.getElementById(idPara);
+              let fontS = element.style.fontSize;
+              let newFontS = parseInt(fontS) - 1;
+              if (newFontS > 10){
+              element.style.fontSize = newFontS + "px"
+              console.log(newFontS); }
+          } 
+function changeColor(){
+  document.getElementById("p1").style.color = "blue";
+  document.getElementById("p2").style.color = "gold";
+  document.getElementById("p3").style.color = "red";
+}
+function changeBgColor(color){
+  document.getElementsByTagName("body")[0].style.backgroundColor = color;
+}
+function copyContent(paragraph1, paragraph2){
+  let content = document.getElementById(paragraph2).innerText;
+  document.getElementById(paragraph1).innerText = content;
+}
         </script>
         <div id= "point">
           <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu nibh fermentum, venenatis mauris nec, maximus lorem. Vestibulum vitae metus sed felis tincidunt tristique ut vitae arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam eget libero diam.</p>
