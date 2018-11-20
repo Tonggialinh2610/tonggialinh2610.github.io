@@ -67,8 +67,8 @@ h1 {
 
 button {
   border: 0;
-  background: rgb(148, 141, 191);
-  color: #e6b300;
+  background: rgba(42,50,113, .28);
+  color: #6cacc5;
   cursor: pointer;
   float: left;
   font: inherit;
@@ -76,7 +76,7 @@ button {
   width: 2em;
   height: 2em;
   transition: all 0.5s;
-  
+
   &:hover {
     background: #201e40;
   }
@@ -88,7 +88,7 @@ button {
     &::after {
       animation: zoom 1s;
       animation-iteration-count: 1;
-      animation-fill-mode: both; 
+      /*animation-fill-mode: both; */
       content: attr(data-num);
       cursor: default;
       font-size: 100px;
@@ -103,18 +103,18 @@ button {
   }
 }
 
-/*
+
 .ops:focus::after {
   content: attr(data-ops);
-  margin-left: -210px;
-  width: 420px;
-}*/
+  /*margin-left: -210px;
+  width: 420px;*/
+}
 
 
 .equals:focus::after {
   content: attr(data-result);
-  margin-left: -300px;
-  width: 600px;
+  /*margin-left: -300px;
+  width: 600px;*/
 }
 
 
