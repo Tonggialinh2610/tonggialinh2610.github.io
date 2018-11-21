@@ -71,18 +71,17 @@
 
       case "power":
       resultNum = Math.pow(oldNum,theNum);
-      break;
-      case "factorialize":
-      function factorialize(oldNum) {
-  if (oldNum < 0) 
-        return -1;
-  else if (oldNum == 0) 
-      return 1;
-  else {
-      return (oldNum * factorialize(oldNum - 1));
-    }
-  };
-  break;
+      break; 
+
+      case "Logarit":
+      resultNum = Math.log(theNum);
+            break;
+
+       case "square root":
+       resultNum = Math.sqrt(theNum);
+          break;
+        case "absolute":
+        resultNum = Math.abs( theNum);       
 
 
     
