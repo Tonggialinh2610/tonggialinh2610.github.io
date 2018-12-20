@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "img"
+		},
+		{
+			"path": "Css"
+		},
+		{
+			"path": "script"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
