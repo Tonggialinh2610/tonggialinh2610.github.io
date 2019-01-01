@@ -1,4 +1,90 @@
 * {
-    margin: auto;
+    margin: 0;
+    padding: 0;
+}
+.top {
+    background-image:url(https://static.makeuseof.com/wp-content/uploads/2013/01/camera-lens-670x335.jpg);
+    background-size: cover;
+    height: 335px;
     padding: auto;
+}
+.menutren{
+    background: transparent;
+}
+#brandlogo img{
+    height: 125px;
+position: relative;}
+.top .mtrai a.nav-link{
+    text-transform: uppercase;
+    padding: 32px 23px;
+    font-size: 14px;
+    color: white;
+
+}
+.top .mtrai a.nav-link:hover {
+    color:#28a745;
+    transition: 0,5s;
+   
+
+}
+.container a.nutsanpham{
+    background-color: #28a745;
+    border-color: #28a745;
+    font-size: 18px;  
+     /* margin-top: 10%; */
+
+}
+
+/* css cho banner */
+.banner h1{color: white;
+    padding-top: 19px;}
+.banner p{ color: white;}
+/* css cho home */
+.container:before, .container:after {
+    display: table;
+    content: " ";}
+ div.breadcrumbs ul.breadcrumb li:first-child:before {
+        font-family: fontawesome;
+        content: "\F015";
+        float: left;
+        font-size: 15px;
+        margin-right: 5px;
+        left: 0px;
+        position: relative;}
+        div.breadcrumbs ul.breadcrumb li.active:after {
+            content: "";
+        }
+        
+        div.breadcrumbs ul.breadcrumb li:last-child:after {
+            content: "";
+        }
+        div.breadcrumbs ul.breadcrumb li:after {
+            color: #ea3a3c;
+            content: "\f105";
+            display: inline-block;
+            font-family: FontAwesome;
+            font-size: 15px;
+            margin-left: 10px;
+            vertical-align: baseline;
+            padding: 0 10px 0 0;
+        }
+/* css cho slide anh */
+.mauAnh h5{
+    color:goldenrod;
+    
+}
+
+.mauAnh p{
+    color:red;
+    text-transform: uppercase;
+}
+
+@media (max-width:576px){
+    a#brandlogo{width:200px;
+    height:400px;
+    margin-left:90px;
+ }
+ .mtrai{background: blue;
+ width:100%;
+ }
 }
